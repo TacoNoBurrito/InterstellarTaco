@@ -38,6 +38,7 @@ if (config.routes !== false) {
 
   routes.forEach((route) => {
     app.get(route.path, (req, res) => {
+      
       res.sendFile(path.join(__dirname, 'static', route.file))
     })
   })
@@ -70,7 +71,11 @@ const fetchData = async (req, res, next, baseUrl) => {
     next(error)
   }
 }
+let uts = 0;
 server.on('request', (req, res) => {
+
+  uts++;
+        console.log(`user ${uts}`);
   if (bareServer.shouldRoute(req)) {
     bareServer.routeRequest(req, res)
   } else {
