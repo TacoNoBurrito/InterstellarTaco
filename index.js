@@ -6,7 +6,7 @@ import path from 'node:path'
 import cors from 'cors'
 import config from './config.js'
 const __dirname = process.cwd()
-import * as fs from "fs"
+
 const server = http.createServer()
 const app = express(server)
 const bareServer = createBareServer('/v/')
