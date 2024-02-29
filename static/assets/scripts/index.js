@@ -9,7 +9,7 @@ if (form && input) {
 }
 
 function registerServiceWorker() {
-  return window.navigator.serviceWorker.register('./sw.js', {
+  return window.navigator.serviceWorker.register('./uvsw.js', {
     scope: __uv$config.prefix,
   })
 }
