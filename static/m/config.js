@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/a/',
-    bare: 'https://gointerstellar.app/v/',
+    bare: '/v/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/m/handler.js',
